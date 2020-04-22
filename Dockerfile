@@ -9,4 +9,6 @@ RUN         apk add hugo
 RUN         mkdir /www
 COPY        hugo/ www/
 
-ENTRYPOINT  ["/usr/bin/hugo", "server", "-D", "-c /www"]
+WORKDIR     /www
+
+ENTRYPOINT  ["/usr/bin/hugo", "server", "-D"]
