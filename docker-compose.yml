@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  franklybrad:
+    container_name: franklybrad
+    image: franklybrad:latest
+    hostname: franklybrad
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.franklybrad.entrypoints=http"
+      - "traefik.http.routers.franklybrad.rule=Host(`franklybrad.francopuccini.casa`)"
+      - "traefik.http.middlewares.franklybrad-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.franklybrad.middlewares=franklybrad-https-redirect"
+      - "traefik.http.routers.franklybrad-secure.entrypoints=https"
+      - "traefik.http.routers.franklybrad-secure.rule=Host(`franklybrad.francopuccini.casa`)"
+      - "traefik.http.routers.franklybrad-secure.tls=true"
+      - "traefik.http.routers.franklybrad-secure.tls.certresolver=http"
+      - "traefik.http.routers.franklybrad-secure.service=franklybrad"
+      - "traefik.http.services.franklybrad.loadbalancer.server.port=1313"
+      - "traefik.docker.network=proxy"
+    networks:
+      - proxy
+    ports:
+      - "1313:1313"
+    restart: always
+
+networks:
+  proxy:
+    external: true

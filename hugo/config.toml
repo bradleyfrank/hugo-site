@@ -1,0 +1,384 @@
+# Page settings
+
+baseURL = "https://franklybrad.com"
+languageCode = "en-us"
+title = "Bradley Frank"
+theme = "hugo-devresume-theme"
+
+
+
+
+
+
+[params]
+    author = "CowboySmall"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+
+    primaryColor = "#42A8C0"
+    textPrimaryColor = "#292929"
+
+
+
+
+    [params.profile]
+        enable = true
+        name = "Bradley Frank"
+        tagline = "Senior SysAdmin & DevOps Engineer"
+        avatar = "avatar.png"
+
+
+
+
+
+
+
+    [params.contact]
+        enable = true
+        location = "Greater Boston"
+
+        # [[params.contact.list]]
+        # icon = "fas fa-phone-square"
+        # url = "tel:#"
+        # text = ""
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "bradfrank@fastmail.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "#"
+        text = "franklybrad.com"
+
+
+
+
+
+
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "RHEL/CentOS ; Ubuntu"
+        [[params.skills.list.items]]
+        details = "Git ; GitHub/GitLab/Gitea"
+        [[params.skills.list.items]]
+        details = "Docker/Kubernetes"
+        [[params.skills.list.items]]
+        details = "Jenkins/GitLab CI"
+        [[params.skills.list.items]]
+        details = "Ansible/Puppet"
+        [[params.skills.list.items]]
+        details = "Bash/Python"
+        [[params.skills.list.items]]
+        details = "MariaDB/MySQL"
+        [[params.skills.list.items]]
+        details = "VMware vSphere/Cloud"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Documentation (Confluence/Wikis)"
+        [[params.skills.list.items]]
+        details = "Mentoring/Teaching"
+        [[params.skills.list.items]]
+        details = "Remote Work/Self-Management"
+        [[params.skills.list.items]]
+        details = "Communication"
+        [[params.skills.list.items]]
+        details = "Work/Life Balance"
+
+
+
+
+
+
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Management Information Systems, MA"
+        university = "Stevens Institute of Technology"
+        dates = "May 2007"
+        [[params.education.list]]
+        degree = "Computer Science, BA"
+        university = "SUNY Geneseo"
+        dates = "May 2005"
+
+
+
+
+
+
+
+
+    [params.awards]
+        enable = false
+
+        [[params.awards.list]]
+        name = "Award Lorem Ipsum"
+        body = "Microsoft lorem ipsum"
+        date = "2019"
+        [[params.awards.list]]
+        name = "Award Donec Sodales"
+        body = "Oracle Aenean"
+        date = "2017"
+
+
+
+
+
+
+
+
+    [params.languages]
+        enable = false
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Native"
+        [[params.languages.list]]
+        name = "Spanish"
+        level = "Professional"
+
+
+
+
+
+
+
+
+    [params.interests]
+        enable = false
+
+        [[params.interests.list]]
+        name = "Climbing"
+        [[params.interests.list]]
+        name = "Snowboarding"
+        [[params.interests.list]]
+        name = "Photography"
+        [[params.interests.list]]
+        name = "Travelling"
+
+
+
+
+
+
+
+
+    [params.summary]
+        enable = true
+        text = "Experienced System Administrator and DevOps engineer with a multitude of technological skill sets. CS/MIS by education, practical IT by trade; experience in non-profits, private industry, and higher education. Currently learning and working towards the cloudification of everything. Has administered and deployed every major OS platform, developed in a handful of programming languages, and utilized hundreds of tools. Loves tinkering and developing new skills in his time off."
+
+
+
+
+
+
+
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Senior Systems Administrator"
+        dates = "April 2018 — Present"
+        company = "Tufts University"
+        details = "Managed development and operations in a hybrid cloud environment running critical university services — Oracle and MySQL databases, CMS platforms, HR/finance applications, and network appliances — leveraging our private GitLab infrastructure, Puppet and Ansible for configuration management, and Docker and Kubernetes for deploying applications."
+        [[params.experience.list.items]]
+        details = "On-call escalation responsible for delegation of client support cases, issue resolution, and incident postmortem"
+        [[params.experience.list.items]]
+        details = "Managed a full stack Drupal and WordPress hosting environment for university schools and departments"
+        [[params.experience.list.items]]
+        details = "Administered CI/CD pipeline for deploying containers, working directly with Kubernetes to troubleshoot issues"
+        [[params.experience.list.items]]
+        details = "Built ubi8-based Docker images and developed Jenkinsfile configs for customized developer needs"
+        [[params.experience.list.items]]
+        details = "Coordinated bi-annual infrastructure-wide patching and upgrading of 500+ VMs and appliances"
+        [[params.experience.list.items]]
+        details = "Developed systemd services for enterprise Oracle applications and other internal finance and HR tools"
+
+        [[params.experience.list]]
+        title = "Cloud Architect & Security Engineer"
+        dates = "June 2018 — Present"
+        company = "Data Privacy Lab"
+        details = "Contracted to build and maintain Ubuntu-based ec2 instances and associated components (VPC, RDS, CodeCommit, DNS, etc.) within AWS to securely publish data from collaborative work with the FTC, FEC, and other government agencies, along with investigative work into privacy and security in the realm of big data."
+        [[params.experience.list.items]]
+        details = "Migrated critical websites from on-prem RHEL6 VMs to Ubuntu 18.04 ec2 instances"
+        [[params.experience.list.items]]
+        details = "Upgraded from manually generated InCommon SSL certs to an automated LetsEncrypt certificate system"
+        [[params.experience.list.items]]
+        details = "Instituted IAM policies for securing user and root accounts with MFA"
+        [[params.experience.list.items]]
+        details = "Developed processes and security for checking code into CodeCommit and deploying to instances"
+        [[params.experience.list.items]]
+        details = "Created a suite of end-user documentation for managing sites and AWS infrastructure"
+
+        [[params.experience.list]]
+        title = "Systems Administrator"
+        dates = "March 2013 — April 2018"
+        company = "Harvard-MIT Data Center"
+        details = "Worked on a devops team to configure, deploy, and manage 200+ physical, virtual, and cloud-based CentOS servers making up a social science research cluster with adjacent services (DNS, LDAP, web hosting, database hosting, big data storage) that served faculty and students across Harvard."
+        [[params.experience.list.items]]
+        details = "On-call responsibilities for 24x7 steady-state operations included monitoring for incident response, weekly tape backup rotation, providing tier II and III support for clients, and patching/upgrading servers and appliances"
+        [[params.experience.list.items]]
+        details = "Deployed Puppet for infrastructure management using Capistrano under a dev → qa → production model"
+        [[params.experience.list.items]]
+        details = "Completely rebuilt internal web hosting platform to a LEMP model, managed with Puppet/Hiera"
+        [[params.experience.list.items]]
+        details = "Upgraded legacy MySQL hosting to a modern MariaDB infrastructure with multi-master replication and backup"
+        [[params.experience.list.items]]
+        details = "Administered NetApp FAS series storage running ONTAP 8 for hosting big data and VM storage"
+        [[params.experience.list.items]]
+        details = "Mentored junior Systems Administrator in architecture, troubleshooting methodologies, and best practices"
+        [[params.experience.list.items]]
+        details = "Managed confidential data (levels 1–4 as per Harvard IRB) across multiple environments"
+
+        [[params.experience.list]]
+        title = "Systems Project Manager"
+        dates = "August 2012 — May 2018"
+        company = "Harvard EdLabs"
+        details = "Contracted to develop and engineer a secure systems infrastructure — that complied with Harvard’s highest level security requirements — for a team of statistical researchers at the Education Innovation Laboratory, to store and process private, public, and governmental datasets."
+        [[params.experience.list.items]]
+        details = "Researched and deployed high-performance, multi-user, CentOS 7-based workstations for analyzing big data"
+        [[params.experience.list.items]]
+        details = "Wrote custom scripts for user management, log retention, data backup, and data onboarding"
+        [[params.experience.list.items]]
+        details = "Configured systems to meet strict security requirements with intrusion detection, access control policies, removal of network/remote capabilities, data encryption, session locking and expiration, and root logging"
+        [[params.experience.list.items]]
+        details = "Wrote administrator and user manuals, documented technical setup of workstations, and security compliance checklists for Harvard University and third party data providers"
+
+        [[params.experience.list]]
+        title = "IT Support Specialist"
+        dates = "July 2011 — March 2013"
+        company = "Harvard-MIT Data Center"
+        details = "As a member of a small client services team, provided security training and deployment, along with tier I and tier II support for a wide array of hardware, software, mobile devices, and an on-prem High Performance Cluster for hundreds of faculty, staff, and students across several departments."
+         [[params.experience.list.items]]
+        details = "Built PC imaging process using Acronis True Image, reducing deployment time by dozens of hours"
+        [[params.experience.list.items]]
+        details = "Quoted and purchased computer equipment, accessories, software, and licenses for departments"
+        [[params.experience.list.items]]
+        details = "Supported students and faculty using the research cluster virtual desktop environment"
+
+        [[params.experience.list]]
+        title = "LAN Administrator"
+        dates = "Sept 2010 – July 2011"
+        company = "Personal Computers, Inc."
+        details = "As part of a MSP, performed dual roles as tier II and tier III remote and on-site support for multiple clients, and a systems administrator overseeing servers, SANs, phone appliances, and networking equipment in a colocation facility."
+        [[params.experience.list.items]]
+        details = "Supported Domino Admin 6.5 with Lotus Notes, Exchange Server 2003, Zimbra Server 5, and iMail"
+        [[params.experience.list.items]]
+        details = "Performed tape backups and restores with CA ARCserve and NetApp appliance"
+        [[params.experience.list.items]]
+        details = "Responsible for a 400+ server data center and steady state operations during 24x7 on-call rotations"
+        [[params.experience.list.items]]
+        details = "Executed monthly WSUS for Windows 2003 and 2008 servers during overnight maintenance windows"
+        [[params.experience.list.items]]
+        details = "Developed monitoring applications for critical web hosting processes"
+
+        [[params.experience.list]]
+        title = "Systems Administrator I"
+        dates = "Oct 2007 – Sept 2010"
+        company = "Crystal Run Village, Inc."
+        details = "Member of a small team providing comprehensive IT support for a non-profit serving intellectually disabled individuals, and its 50+ residential offices, along with managing mission critical infrastructure and services from the on-site data center."
+        [[params.experience.list.items]]
+        details = "Performed tape backups and restores with Symantec Backup Exec 2010"
+        [[params.experience.list.items]]
+        details = "Developed and deployed Windows XP/7 images using Acronis True Image to standardize company-wide PCs"
+        [[params.experience.list.items]]
+        details = "Installed printers, video conferencing, and networking equipment"
+        [[params.experience.list.items]]
+        details = "Configured internet proxy and custom web filters"
+        [[params.experience.list.items]]
+        details = "Performed ethernet punch-down and cable drops for office rewiring"
+
+
+
+
+
+
+
+
+
+    [params.projects]
+        enable = false
+
+        [[params.projects.list]]
+        title = "Project Lorem Ipsum"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+        [[params.projects.list]]
+        title = "Project Sed Fringilla"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+        [[params.projects.list]]
+        title = "Project Praesent"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+
+
+
+
+
+
+
+
+
+    [params.information]
+        enable = true
+
+        [[params.information.list]]
+        title = "Trainings & Classes"
+        [[params.information.list.items]]
+        details = "Red Hat: RHEL 8, Advanced Container CI/CD Pipeline Orchestration, Ansible Automation Technical Workshop"
+        [[params.information.list.items]]
+        details = "DevOps Foundations: Continuous Delivery/Continuous Integration"
+        [[params.information.list.items]]
+        details = "Global Knowledge: AWS Technical Essentials"
+        [[params.information.list.items]]
+        details = "Opsview: Essentials, Administration, Advanced Administration"
+
+        [[params.information.list.items]]
+        details = "Puppet Labs: Fundamentals, Practitioner"
+        [[params.information.list.items]]
+        details = "Harvard IT Academy: Agile Foundations"
+        [[params.information.list.items]]
+        details = "MITx: Introduction to Computer Science and Programming Using Python (6.00.1x)"
+        [[params.information.list.items]]
+        details = "Harvard Extension School: Fundamentals of Website Design (CSCI-E12), Introduction to Content Management Systems (CSCI-E30), Building Dynamic Websites (CSCI-E75)"
+
+
+
+
+
+
+
+
+    [params.social]
+        enable = false
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/username"
+        title = "username"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/username"
+        title = "username"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "//twitter.com/username"
+        title = "@username"
+
+
+
+
+
