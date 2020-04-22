@@ -9,4 +9,4 @@ RUN         apk add hugo
 RUN         mkdir /www
 COPY        hugo/ www/
 
-ENTRYPOINT  ["hugo server -D"]
+ENTRYPOINT  ["/usr/bin/hugo", "server", "-D", "-c /www"]
