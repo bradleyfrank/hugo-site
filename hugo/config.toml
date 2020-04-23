@@ -43,7 +43,7 @@ theme = "hugo-devresume-theme"
         # text = ""
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
-        url = "mailto:#"
+        url = "mailto:bradfrank@fastmail.com"
         text = "bradfrank@fastmail.com"
         [[params.contact.list]]
         icon = "fas fa-globe"
@@ -173,7 +173,7 @@ theme = "hugo-devresume-theme"
 
     [params.summary]
         enable = true
-        text = "Experienced System Administrator and DevOps engineer with a multitude of technological skill sets. CS/MIS by education, practical IT by trade; experience in non-profits, private industry, and higher education. Currently learning and working towards the cloudification of everything. Has administered and deployed every major OS platform, developed in a handful of programming languages, and utilized hundreds of tools. Loves tinkering and developing new skills in his time off."
+        text = "Experienced System Administrator and DevOps engineer with a multitude of skill sets. CS/MIS by education, practical IT by trade; experience in non-profits, private industry, and higher education. Has administered and deployed with Windows and Linux, developed in a handful of programming languages, and utilized hundreds of tools. Loves learning and developing new skills. Always looking forward to building next generation systems and infrastructure."
 
 
 
@@ -306,25 +306,32 @@ theme = "hugo-devresume-theme"
 
 
     [params.projects]
-        enable = false
+        enable = true
 
         [[params.projects.list]]
-        title = "Project Lorem Ipsum"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        title = "FranklyBrad.com Website"
+        meta = "Containerized website"
+        tagline = "This website was built with Hugo and packaged as a container based on the Alpine Linux image. It's running behind a Traefik 2 container for reverse-proxy and Let's Encrypt certs. The project is hosted at https://github.com/bradleyfrank/hugo-site."
 
         [[params.projects.list]]
-        title = "Project Sed Fringilla"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+        title = "NAS Replacement With ZFS"
+        meta = "Home storage and file server"
+        tagline = "For cost consideration, I wanted to migrate an old NAS to use the existing HDD storage in my home server. I settled on ZFS with mirrored vdevs for redundancy. I added local snapshots, scheduled SMART scans, and offsite backup to add robustness, and Samba sharing for easy file access."
 
         [[params.projects.list]]
-        title = "Project Praesent"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+        title = "Nextcloud Implementation"
+        meta = "Dropbox replacement for file syncing and sharing"
+        tagline = "A more secure and privacy friendly option for sharing documents with my family, I control the fullstack. My instance runs in Docker and uses a MariaDB and Redis backend."
 
+        [[params.projects.list]]
+        title = "BorgBackup All The Things"
+        meta = "3-2-1 backups of the file server and applications"
+        tagline = "I repurposed the old NAS to be a dumb box that takes backups from the new file server. BorgBackup dedupes application and user data before encrypting it on the remote system. From there, it's backed up again to cloud storage (B2)."
 
-
+        [[params.projects.list]]
+        title = "Plex Media Server"
+        meta = "It's as close to a commercial offering that you can host yourself"
+        tagline = "Because I still have a lot of movies/tv/music that I want to manage myself, but I wanted the closest thing I could get to a commercial offering."
 
 
 
