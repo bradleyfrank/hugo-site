@@ -311,7 +311,7 @@ theme = "hugo-devresume-theme"
         [[params.projects.list]]
         title = "FranklyBrad.com Website"
         meta = "Containerized website"
-        tagline = "This website was built with Hugo and packaged as a container based on the Alpine Linux image. It's running behind a Traefik 2 container for reverse-proxy and Let's Encrypt certs. The project is hosted at [GitHub](https://github.com/bradleyfrank/hugo-site)."
+        tagline = "This website was built with Hugo and packaged as a container based on the Alpine Linux image. It's running behind a Traefik 2 container for reverse-proxy and Let's Encrypt certs. The project is hosted at https://github.com/bradleyfrank/hugo-site."
 
         [[params.projects.list]]
         title = "NAS Replacement With ZFS"
