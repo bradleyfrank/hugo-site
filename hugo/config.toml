@@ -37,10 +37,6 @@ theme = "hugo-devresume-theme"
         enable = true
         location = "Greater Boston"
 
-        # [[params.contact.list]]
-        # icon = "fas fa-phone-square"
-        # url = "tel:#"
-        # text = ""
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
         url = "mailto:bradfrank@fastmail.com"
@@ -49,6 +45,10 @@ theme = "hugo-devresume-theme"
         icon = "fas fa-globe"
         url = "#"
         text = "franklybrad.com"
+        [[params.contact.list]]
+        icon = "fa fa-code"
+        url = "https://github.com/bradleyfrank"
+        text = "github"
 
 
 
