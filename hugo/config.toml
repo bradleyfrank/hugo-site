@@ -311,7 +311,7 @@ theme = "hugo-devresume-theme"
         [[params.projects.list]]
         title = "FranklyBrad.com Website"
         meta = "Containerized website"
-        tagline = "This website was built with Hugo and packaged as a container based on the Alpine Linux image. It's running behind a Traefik 2 container for reverse-proxy and Let's Encrypt certs. The project is hosted at https://github.com/bradleyfrank/hugo-site."
+        tagline = "This website was built with Hugo and packaged as a container based on the Alpine Linux image. It's running behind a Traefik 2 container for reverse-proxy and Let's Encrypt certs. The project is hosted at <a href=\"https://github.com/bradleyfrank/hugo-site\">GitHub</a>."
 
         [[params.projects.list]]
         title = "NAS Replacement With ZFS"
@@ -320,18 +320,18 @@ theme = "hugo-devresume-theme"
 
         [[params.projects.list]]
         title = "Nextcloud Implementation"
-        meta = "Dropbox replacement for file syncing and sharing"
+        meta = "A great Dropbox replacement"
         tagline = "A more secure and privacy friendly option for sharing documents with my family, I control the fullstack. My instance runs in Docker and uses a MariaDB and Redis backend."
 
         [[params.projects.list]]
         title = "BorgBackup All The Things"
-        meta = "3-2-1 backups of the file server and applications"
+        meta = "3-2-1 backups"
         tagline = "I repurposed the old NAS to be a dumb box that takes backups from the new file server. BorgBackup dedupes application and user data before encrypting it on the remote system. From there, it's backed up again to cloud storage (B2)."
 
         [[params.projects.list]]
         title = "Plex Media Server"
-        meta = "It's as close to a commercial offering that you can host yourself"
-        tagline = "Because I still have a lot of movies/tv/music that I want to manage myself, but I wanted the closest thing I could get to a commercial offering."
+        meta = "Basically turn-key"
+        tagline = "Because there's still a lot of movies/tv/music you can't rely on to be streaming, but I wanted the closest thing I could get to a commercial offering. (Yes, I've tried JellyFin.) Also great for watching all of the wedding media and home videos."
 
 
 
