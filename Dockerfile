@@ -11,4 +11,7 @@ COPY        hugo/ www/
 
 WORKDIR     /www
 
-ENTRYPOINT  ["/usr/bin/hugo", "server", "--bind", "0.0.0.0", "--baseURL", "http://localhost", "-D"]
+ENTRYPOINT  ["/usr/bin/hugo", "server", \
+              "--bind=0.0.0.0", \
+              "--baseURL=https://franklybrad.com", \
+              "--appendPort=false"]
