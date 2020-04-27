@@ -320,18 +320,18 @@ theme = "hugo-devresume-theme"
 
         [[params.projects.list]]
         title = "Nextcloud Implementation"
-        meta = "A great Dropbox replacement"
+        meta = "File sharing and collaboration"
         tagline = "A more secure and privacy friendly option for sharing documents with my family, I control the fullstack. My instance runs in Docker and uses a MariaDB and Redis backend."
 
         [[params.projects.list]]
-        title = "BorgBackup All The Things"
-        meta = "3-2-1 backups"
-        tagline = "I repurposed the old NAS to be a dumb box that takes backups from the new file server. BorgBackup dedupes application and user data before encrypting it on the remote system. From there, it's backed up again to cloud storage (B2)."
+        title = "Backups using Borg"
+        meta = "Backups with built-in encryption"
+        tagline = "I repurposed the old NAS to be a simple server that can take backups from the new file server. BorgBackup dedupes application and user data before encrypting it on the remote system. From there, it's backed up again to cloud storage (B2)."
 
         [[params.projects.list]]
         title = "Plex Media Server"
-        meta = "Basically turn-key"
-        tagline = "Because there's still a lot of movies/tv/music you can't rely on to be streaming, but I wanted the closest thing I could get to a commercial offering. (Yes, I've tried JellyFin.) Also great for watching all of the wedding media and home videos."
+        meta = "Streaming media service"
+        tagline = "There's still a lot of movies/tv/music you can't rely on to be commercially streaming, so I converted my physical media to digital using various tools. Also great for watching all of the wedding media and home videos."
 
 
 
