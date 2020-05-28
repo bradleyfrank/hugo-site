@@ -70,7 +70,7 @@ theme = "hugo-devresume-theme"
         [[params.skills.list.items]]
         details = "Jenkins/GitLab CI"
         [[params.skills.list.items]]
-        details = "Ansible/Puppet"
+        details = "Ansible/Puppet/Salt"
         [[params.skills.list.items]]
         details = "Bash/Python"
         [[params.skills.list.items]]
