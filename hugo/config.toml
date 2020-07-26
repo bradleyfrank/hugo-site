@@ -1,6 +1,8 @@
 # Page settings
 
-baseURL = "https://franklybrad.com"
+baseURL = ""
+relativeURLs = "true"
+uglyURLs = "true"
 languageCode = "en-us"
 title = "Bradley Frank"
 theme = "hugo-devresume-theme"
@@ -24,7 +26,7 @@ theme = "hugo-devresume-theme"
     [params.profile]
         enable = true
         name = "Bradley Frank"
-        tagline = "Senior SysAdmin & DevOps Engineer"
+        tagline = "Senior SysAdmin & Cloud Engineer"
         avatar = "avatar.png"
 
 
@@ -42,9 +44,9 @@ theme = "hugo-devresume-theme"
         url = "mailto:bradfrank@fastmail.com"
         text = "bradfrank@fastmail.com"
         [[params.contact.list]]
-        icon = "fas fa-globe"
-        url = "#"
-        text = "franklybrad.com"
+        icon = "fab fa-linkedin"
+        url = "https://linkedin.com/in/bradleymfrank"
+        text = "bradleymfrank"
         [[params.contact.list]]
         icon = "fa fa-code"
         url = "https://github.com/bradleyfrank"
@@ -62,32 +64,32 @@ theme = "hugo-devresume-theme"
         [[params.skills.list]]
         title = "Technical"
         [[params.skills.list.items]]
-        details = "RHEL/CentOS ; Ubuntu"
+        details = "RHEL/CentOS; Ubuntu"
         [[params.skills.list.items]]
-        details = "Git ; GitHub/GitLab/Gitea"
-        [[params.skills.list.items]]
-        details = "Docker/Kubernetes"
-        [[params.skills.list.items]]
-        details = "Jenkins/GitLab CI"
+        details = "Docker/Jenkins/Kubernetes"
         [[params.skills.list.items]]
         details = "Ansible/Puppet/Salt"
         [[params.skills.list.items]]
         details = "Bash/Python"
         [[params.skills.list.items]]
+        details = "Git; GitHub/GitLab"
+        [[params.skills.list.items]]
         details = "MariaDB/MySQL"
         [[params.skills.list.items]]
         details = "VMware vSphere/Cloud"
+        [[params.skills.list.items]]
+        details = "AWS EC2/VPC/RDS"
 
         [[params.skills.list]]
         title = "Professional"
         [[params.skills.list.items]]
-        details = "Documentation (Confluence/Wikis)"
+        details = "Writing Documentation"
         [[params.skills.list.items]]
         details = "Mentoring/Teaching"
         [[params.skills.list.items]]
         details = "Remote Work/Self-Management"
         [[params.skills.list.items]]
-        details = "Communication"
+        details = "Written/Verbal Communication"
         [[params.skills.list.items]]
         details = "Work/Life Balance"
 
@@ -97,37 +99,14 @@ theme = "hugo-devresume-theme"
 
 
 
-    [params.education]
+    [params.awards]
         enable = true
 
-        [[params.education.list]]
-        degree = "Management Information Systems, MA"
-        university = "Stevens Institute of Technology"
-        dates = "May 2007"
-        [[params.education.list]]
-        degree = "Computer Science, BA"
-        university = "SUNY Geneseo"
-        dates = "May 2005"
-
-
-
-
-
-
-
-
-    [params.awards]
-        enable = false
-
         [[params.awards.list]]
-        name = "Award Lorem Ipsum"
-        body = "Microsoft lorem ipsum"
-        date = "2019"
-        [[params.awards.list]]
-        name = "Award Donec Sodales"
-        body = "Oracle Aenean"
-        date = "2017"
-
+        name = "AWS Certified SysOps Administrator"
+        body = ""
+        url = "https://www.youracclaim.com/badges/e8be4699-1d77-4e9e-b2ce-436a2b3d69c4"
+        date = "July 2020"
 
 
 
@@ -170,10 +149,27 @@ theme = "hugo-devresume-theme"
 
 
 
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Management Information Systems, MA"
+        university = "Stevens Institute of Technology"
+        dates = "May 2007"
+        [[params.education.list]]
+        degree = "Computer Science, BA"
+        university = "SUNY Geneseo"
+        dates = "May 2005"
+
+
+
+
+
+
 
     [params.summary]
         enable = true
-        text = "Experienced System Administrator and DevOps engineer with a multitude of skill sets. CS/MIS by education, practical IT by trade; experience in non-profits, private industry, and higher education. Has administered and deployed with Windows and Linux, developed in a handful of programming languages, and utilized hundreds of tools. Loves learning and developing new skills. Always looking forward to building next generation systems and infrastructure."
+        text = "Systems Administrator and Cloud Engineer with a wide-range of experience with physical, virtual, and container architectures -- from concept to deployment to administration. CS/MIS by education, practical IT by trade. Has a proven track record managing and working with numerous languages, tools, platforms, and people. Experience in non-profits, private industry, and higher education; working on-prem, in the cloud, and with hybrid infrastructures. Can lead teams and mentor juniors. Loves tinkering and developing new skills in his time off."
 
 
 
@@ -189,35 +185,32 @@ theme = "hugo-devresume-theme"
         title = "Senior Systems Administrator"
         dates = "April 2018 — Present"
         company = "Tufts University"
-        details = "Managed development and operations in a hybrid cloud environment running critical university services — Oracle and MySQL databases, CMS platforms, HR/finance applications, and network appliances — leveraging our private GitLab infrastructure, Puppet and Ansible for configuration management, and Docker and Kubernetes for deploying applications."
+        details = "Managed operations of a hybrid cloud data center running critical university services such as Oracle and MySQL databases, CMS platforms, HR/finance applications, network appliances, and numerous internal toolsets, leveraging our private GitLab infrastructure, Puppet and Salt for configuration management, and Docker and Kubernetes for deploying applications."
         [[params.experience.list.items]]
-        details = "On-call escalation responsible for delegation of client support cases, issue resolution, and incident postmortem"
+        details = "Provided on-call escalation: responsible for delegation of client support cases, issue resolution, incident postmortem, and knowledge transfer"
         [[params.experience.list.items]]
-        details = "Managed a full stack Drupal and WordPress hosting environment for university schools and departments"
+        details = "Developed CI/CD pipelines including Docker images, Jenkinsfiles, and deploying Kubernetes resources, to reduce infrastructure overhead"
         [[params.experience.list.items]]
-        details = "Administered CI/CD pipeline for deploying containers, working directly with Kubernetes to troubleshoot issues"
+        details = "Coordinated regularly scheduled infrastructure-wide security patching and upgrading of 500+ VMs and appliances"
         [[params.experience.list.items]]
-        details = "Built ubi8-based Docker images and developed Jenkinsfile configs for customized developer needs"
-        [[params.experience.list.items]]
-        details = "Coordinated bi-annual infrastructure-wide patching and upgrading of 500+ VMs and appliances"
-        [[params.experience.list.items]]
-        details = "Developed systemd services for enterprise Oracle applications and other internal finance and HR tools"
+        details = "Managed a full stack Drupal and WordPress hosting environment for university schools, departments, and teams"
+
 
         [[params.experience.list]]
-        title = "Cloud Architect & Security Engineer"
+        title = "Cloud Engineer"
         dates = "June 2018 — Present"
         company = "Data Privacy Lab"
-        details = "Contracted to build and maintain Ubuntu-based ec2 instances and associated components (VPC, RDS, CodeCommit, DNS, etc.) within AWS to securely publish data from collaborative work with the FTC, FEC, and other government agencies, along with investigative work into privacy and security in the realm of big data."
+        details = "Managed AWS infrastructure and associated components (VPC, RDS, CodeCommit, DNS, etc.), supporting securely publishing data from collaborative work with government agencies, and investigative work into privacy within the realm of big data."
         [[params.experience.list.items]]
-        details = "Migrated critical websites from on-prem RHEL6 VMs to Ubuntu 18.04 ec2 instances"
+        details = "Migrated websites from legacy RHEL6 VMs to Ubuntu 18.04 ec2 instances"
         [[params.experience.list.items]]
-        details = "Upgraded from manually generated InCommon SSL certs to an automated LetsEncrypt certificate system"
+        details = "Redesigned VPC topology to increase security"
         [[params.experience.list.items]]
-        details = "Instituted IAM policies for securing user and root accounts with MFA"
+        details = "Instituted policies for securing root and user accounts with MFA"
         [[params.experience.list.items]]
-        details = "Developed processes and security for checking code into CodeCommit and deploying to instances"
+        details = "Developed processes for securely deploying code from CodeCommit"
         [[params.experience.list.items]]
-        details = "Created a suite of end-user documentation for managing sites and AWS infrastructure"
+        details = "Imported data and deployed RDS instances with read-replicas"
 
         [[params.experience.list]]
         title = "Systems Administrator"
@@ -227,17 +220,15 @@ theme = "hugo-devresume-theme"
         [[params.experience.list.items]]
         details = "On-call responsibilities for 24x7 steady-state operations included monitoring for incident response, weekly tape backup rotation, providing tier II and III support for clients, and patching/upgrading servers and appliances"
         [[params.experience.list.items]]
-        details = "Deployed Puppet for infrastructure management using Capistrano under a dev → qa → production model"
+        details = "Deployed Puppet for infrastructure management using Capistrano"
         [[params.experience.list.items]]
-        details = "Completely rebuilt internal web hosting platform to a LEMP model, managed with Puppet/Hiera"
-        [[params.experience.list.items]]
-        details = "Upgraded legacy MySQL hosting to a modern MariaDB infrastructure with multi-master replication and backup"
+        details = "Modernized legacy LAMP hosting platform with Nginx and MariaDB (including multi-master replication and backup)"
         [[params.experience.list.items]]
         details = "Administered NetApp FAS series storage running ONTAP 8 for hosting big data and VM storage"
         [[params.experience.list.items]]
         details = "Mentored junior Systems Administrator in architecture, troubleshooting methodologies, and best practices"
         [[params.experience.list.items]]
-        details = "Managed confidential data (levels 1–4 as per Harvard IRB) across multiple environments"
+        details = "Responsible for managing confidential data (level 5 as per Harvard IRB) across multiple environments and ensuring proper security protocols"
 
         [[params.experience.list]]
         title = "Systems Project Manager"
@@ -311,7 +302,8 @@ theme = "hugo-devresume-theme"
         [[params.projects.list]]
         title = "FranklyBrad.com Website"
         meta = "Containerized website"
-        tagline = "This website was built with Hugo and packaged as a container based on the Alpine Linux image. It's running behind a Traefik 2 container for reverse-proxy and Let's Encrypt certs. The project is hosted at https://github.com/bradleyfrank/hugo-site."
+        tagline = "This website was built with Hugo and packaged as a container based on the Alpine Linux image. It's running behind a Traefik 2 container for reverse-proxy and Let's Encrypt certs."
+        url = "//github.com/bradleyfrank/hugo-site"
 
         [[params.projects.list]]
         title = "NAS Replacement With ZFS"
@@ -370,20 +362,12 @@ theme = "hugo-devresume-theme"
 
 
     [params.social]
-        enable = false
+        enable = true
 
         [[params.social.list]]
-        icon = "fab fa-github-square"
-        url = "//github.com/username"
-        title = "username"
-        [[params.social.list]]
-        icon = "fab fa-linkedin"
-        url = "//linkedin.com/in/username"
-        title = "username"
-        [[params.social.list]]
-        icon = "fab fa-twitter-square"
-        url = "//twitter.com/username"
-        title = "@username"
+        icon = "fa fa-id-card"
+        url = "https://www.youracclaim.com/badges/e8be4699-1d77-4e9e-b2ce-436a2b3d69c4"
+        title = "acclaim verification"
 
 
 
