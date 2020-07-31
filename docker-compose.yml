@@ -16,7 +16,7 @@ services:
       - "traefik.http.routers.franklybrad-secure.tls=true"
       - "traefik.http.routers.franklybrad-secure.tls.certresolver=http"
       - "traefik.http.routers.franklybrad-secure.service=franklybrad"
-      - "traefik.http.services.franklybrad.loadbalancer.server.port=1313"
+      - "traefik.http.services.franklybrad.loadbalancer.server.port=80"
       - "traefik.docker.network=proxy"
       # - "traefik.http.middlewares.www-redirect.redirectregex.regex=^https://www.franklybrad.com/(.*)"
       # - "traefik.http.middlewares.www-redirect.redirectregex.replacement=https://franklybrad.com/$${1}"
@@ -25,7 +25,7 @@ services:
     networks:
       - proxy
     ports:
-      - "1313:1313"
+      - "8030:80"
     restart: always
     volumes:
       - /etc/timezone:/etc/timezone:ro
