@@ -169,7 +169,7 @@ theme = "hugo-devresume-theme"
 
     [params.summary]
         enable = true
-        text = "Systems Administrator and Cloud Engineer with a wide-range of experience with physical, virtual, and container architectures -- from concept to deployment to administration. CS/MIS by education, practical IT by trade. Has a proven track record managing and working with numerous languages, tools, platforms, and people. Experience in non-profits, private industry, and higher education; working on-prem, in the cloud, and with hybrid infrastructures. Can lead teams and mentor juniors. Loves tinkering and developing new skills in his time off."
+        text = "Cloud Engineer, former Systems Administrator, with a wide-range of experience with physical, virtual, and container architectures — from concept to deployment to administration. CS/MIS by education, practical IT by trade. Has a proven track record managing and working with numerous languages, tools, platforms, and people. Experience in non-profits, private industry, and higher education; working on-prem, in the cloud, and with hybrid infrastructures. Can lead teams and mentor juniors. Loves tinkering and developing new skills in his time off."
 
 
 
@@ -182,8 +182,14 @@ theme = "hugo-devresume-theme"
         enable = true
 
         [[params.experience.list]]
+        title = "Cloud Engineer"
+        dates = "October 2020 — Present"
+        company = "O'Reilly Media"
+
+
+        [[params.experience.list]]
         title = "Senior Systems Administrator"
-        dates = "April 2018 — Present"
+        dates = "April 2018 — October 2020"
         company = "Tufts University"
         details = "Managed operations of a hybrid cloud data center running critical university services such as Oracle and MySQL databases, CMS platforms, HR/finance applications, network appliances, and numerous internal toolsets, leveraging our private GitLab infrastructure, Puppet and Salt for configuration management, and Docker and Kubernetes for deploying applications."
         [[params.experience.list.items]]
@@ -197,9 +203,9 @@ theme = "hugo-devresume-theme"
 
 
         [[params.experience.list]]
-        title = "Cloud Engineer"
+        title = "AWS SysOps Engineer"
         dates = "June 2018 — Present"
-        company = "Data Privacy Lab"
+        company = "Institute for Quantitative Social Science"
         details = "Managed AWS infrastructure and associated components (VPC, RDS, CodeCommit, DNS, etc.), supporting securely publishing data from collaborative work with government agencies, and investigative work into privacy within the realm of big data."
         [[params.experience.list.items]]
         details = "Migrated websites from legacy RHEL6 VMs to Ubuntu 18.04 ec2 instances"
@@ -215,7 +221,7 @@ theme = "hugo-devresume-theme"
         [[params.experience.list]]
         title = "Systems Administrator"
         dates = "March 2013 — April 2018"
-        company = "Harvard-MIT Data Center"
+        company = "Institute for Quantitative Social Science"
         details = "Worked on a devops team to configure, deploy, and manage 200+ physical, virtual, and cloud-based CentOS servers making up a social science research cluster with adjacent services (DNS, LDAP, web hosting, database hosting, big data storage) that served faculty and students across Harvard."
         [[params.experience.list.items]]
         details = "On-call responsibilities for 24x7 steady-state operations included monitoring for incident response, weekly tape backup rotation, providing tier II and III support for clients, and patching/upgrading servers and appliances"
@@ -228,26 +234,15 @@ theme = "hugo-devresume-theme"
         [[params.experience.list.items]]
         details = "Mentored junior Systems Administrator in architecture, troubleshooting methodologies, and best practices"
         [[params.experience.list.items]]
-        details = "Responsible for managing confidential data (level 5 as per Harvard IRB) across multiple environments and ensuring proper security protocols"
+        details = "Researched and deployed high-performance, multi-user, CentOS 7-based high-security [level 5] workstations for analyzing big data at Harvard EdLabs"
+        [[params.experience.list.items]]
+        details = "Wrote administrator and user manuals, documented technical setup of systems, and security compliance checklists for Harvard University and third party data providers"
 
-        [[params.experience.list]]
-        title = "Systems Project Manager"
-        dates = "August 2012 — May 2018"
-        company = "Harvard EdLabs"
-        details = "Contracted to develop and engineer a secure systems infrastructure — that complied with Harvard’s highest level security requirements — for a team of statistical researchers at the Education Innovation Laboratory, to store and process private, public, and governmental datasets."
-        [[params.experience.list.items]]
-        details = "Researched and deployed high-performance, multi-user, CentOS 7-based workstations for analyzing big data"
-        [[params.experience.list.items]]
-        details = "Wrote custom scripts for user management, log retention, data backup, and data onboarding"
-        [[params.experience.list.items]]
-        details = "Configured systems to meet strict security requirements with intrusion detection, access control policies, removal of network/remote capabilities, data encryption, session locking and expiration, and root logging"
-        [[params.experience.list.items]]
-        details = "Wrote administrator and user manuals, documented technical setup of workstations, and security compliance checklists for Harvard University and third party data providers"
 
         [[params.experience.list]]
         title = "IT Support Specialist"
         dates = "July 2011 — March 2013"
-        company = "Harvard-MIT Data Center"
+        company = "Institute for Quantitative Social Science"
         details = "As a member of a small client services team, provided security training and deployment, along with tier I and tier II support for a wide array of hardware, software, mobile devices, and an on-prem High Performance Cluster for hundreds of faculty, staff, and students across several departments."
          [[params.experience.list.items]]
         details = "Built PC imaging process using Acronis True Image, reducing deployment time by dozens of hours"
